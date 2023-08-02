@@ -18,15 +18,23 @@ except:
 # preverjali bomo absolutno vrednost podanega števila
 stevilo = abs(stevilo)
 
-# izpišemo prvo vrstico izpisa
-print(f"Delitelji števila {stevilo} so:")
-
 # gremo po deliteljih od 1 dalje
 trenutno_stevilo = 1
+
+# uvedemo spremenljivko, kamor bomo zapisovali rezultate
+delitelji = ""
+
 while trenutno_stevilo <= stevilo:
     #izračunamo ostanek pri deljenju števila s trenutnim številom
     ostanek = stevilo % trenutno_stevilo
     # preverimo, kakšen je ostanek deljenja izbranega števila z i
     if ostanek == 0:
-        print(trenutno_stevilo)
+        delitelji = delitelji + str(trenutno_stevilo)
+        # vejico izpišemo samo, če ne dodajamo zadnjega števila v nizu
+        if trenutno_stevilo != stevilo:
+            delitelji +=", "
     trenutno_stevilo = trenutno_stevilo + 1
+
+#izpišemo delitelje
+# začnemo izpis rezultatov
+print(f"Delitelji števila {stevilo} so: {delitelji}")

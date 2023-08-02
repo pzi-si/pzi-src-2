@@ -1,10 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-""" 
-Napiši program, ki izpiše vse delitelje podanega števila.
-Sestavi program, ki dobi število n in izpiše vse njegove delitelje, vsakega samo enkrat, urejene po velikosti.
- """
+print("*"*43)
+print("*** Iskanje deliteljev podanega števila ***")
+print("*"*43)
 
 # Uporabnika pozovemo, da vpiše število, katerega delitelje bomo iskali
 stevilo = input("Vpišite število, za katerega želite poiskati vse delitelje: ")
