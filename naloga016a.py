@@ -18,7 +18,6 @@ if stevilo < 0:
     stevilo = -stevilo
     print(f"-{stevilo} sem za vas pretvoril v {stevilo}.")
 
-
 # poravnano levo
 n = 1
 while n <= stevilo:

@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+""" Sestavi program, ki prebere naravno število in ga izpiše v obratnem vrstnem redu.  """
+
+## OPOMBA: deluje samo za cela števila
+
+# Pozovemo uporabnika, naj poda število
+stevilo = input("Podajte število, ki ga želite obrniti: ")
+
+try:
+    tmp = int(stevilo)
+except:
+    print("Niste vnesli celega števila!")
+    quit()
+
+# preštejemo, koliko znakov ima niz
+dolzina = len(stevilo)
+
+n = 1
+obrat = ""
+while n <= dolzina:
+    obrat += stevilo[dolzina-n]
+    n+=1
+
+# izpišemo vsoto
+print("Obrat števila {} je {}.".format(stevilo,obrat))
