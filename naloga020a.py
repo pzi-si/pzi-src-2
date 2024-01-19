@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-""" Sestavi program, s katerim ugibamo celo število med 1 in 100. """
-
-
 print("*********************************")
 print("***** Igra: ugani številko! *****")
 print("*********************************")
@@ -16,6 +13,7 @@ iskanaStevilka = random.randint(0,100)
 
 steviloPoskusov = 0
 
+#nastavim začetno število na vrednost, ki zagotovo ni enaka iskani
 stevilka = -1
 
 while stevilka != iskanaStevilka:
@@ -24,9 +22,12 @@ while stevilka != iskanaStevilka:
     if stevilka.isnumeric(): 
         stevilka = int(stevilka)
         if stevilka != iskanaStevilka:
-            print("Poskus št. {}. Nisi uganil. {} ni prava številka. Poskusi znova!".format(steviloPoskusov, stevilka))
+            print(f"Poskus št. {steviloPoskusov}. {stevilka} ni prava številka.")
+            print(f"Poskusi znova!")
         elif stevilka == iskanaStevilka:
-            print("Bravo! V {}. poskusu si uganil številko {}! Igra je končana!".format(steviloPoskusov, stevilka))
+            print(f"Bravo! V {steviloPoskusov}. poskusu si uganil številko {stevilka}!")
+            print(f"Igra je končana!")
     else:
-        print("Poskus št. {}. Vnesel si '{}', kar ni cela številka. Poskusi znova!".format(steviloPoskusov, stevilka))
+        print(f"Poskus št. {steviloPoskusov}. Vnesel si '{stevilka}', kar ni cela številka.")
+        print(f"Poskusi znova!")
 

@@ -1,14 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-""" Sestavi program, ki izračuna največji skupni delitelj podanih števil. """
-
 import math
 
 # Izpišemo, za kakšen program gre
-print("*"*90)
+print("*"*60)
 print("*"*5,"Program za izračun največjega skupnega delitelja","*"*5)
-print("*"*90)
+print("*"*60)
 
 # definirajmo funkcijo, ki nam bo preverila, če sta vnešeni številki celi
 def preveriStevilke(stevilka):
@@ -16,47 +14,25 @@ def preveriStevilke(stevilka):
         stevilka = int(stevilka)
         return stevilka
     except:
-        print("'{}' ni številka.".format(stevilka))
+        print(f"'{stevilka}' ni številka.")
         quit()
 
-# Pozovemo uporabnika, naj poda števila
-stevila = input("Podajte števila, katerih največji skupni delitelj iščete (ločite jih z vejico): ")
+# Pozovemo uporabnika, naj poda dve celi številki
+stevilo1 = input("Podajte prvo celo število: ")
+# preverimo številki
+stevilo1 = preveriStevilke(stevilo1)
 
-# sestavimo seznam s števili
-stevila_string = stevila.split(",")
+stevilo2 = input("Podajte drugo celo število: ")
+stevilo2 = preveriStevilke(stevilo2)
 
-stevila = []
+print("-"*60)
 
-# preverimo števila
-for i in stevila_string:
-    i = preveriStevilke(i)
-    stevila.append(i)
+# določimo spremenljivki a in b
+a,b = stevilo1,stevilo2
 
-print("Vnesli ste številke:",stevila)
-print("-"*90)
-
-i = 1
-while i < len(stevila):
-    if i == 1:
-        j = i - 1
-        a = stevila[i]
-        b = stevila[j]
-    else:
-        a = stevila[i]
-        b = delitelj
-# preverimo, katero število je večje in določimo spremenljivki a in b
-    if (a > b):
-        a,b=b,a
-
-    print("Preglejujem številki {} in {}.".format(a,b))
-    # Evklidov algoritem
-    while b:
-        n = math.floor(a/b)
-        print("{} = {} * {} + {}".format(a,n,b,a%b))
-        a,b=b,a%b
-    delitelj = a
-    print("Največji skupni delitelj števil {} in {} je {}.".format(stevila[i],stevila[j],delitelj))
-    print("-"*90)
-    i += 1
-
-print("Največji skupni delitelj števil {} je {}.".format(stevila_string,delitelj))
+# Evklidov algoritem
+while b:
+    n = math.floor(a/b)
+    print(f"{a} = {n} * {b} + {a%b}")
+    a,b=b,a%b
+print(f"Največji delitelj števil {stevilo1} in {stevilo2} je {a}.")

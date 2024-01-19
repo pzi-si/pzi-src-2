@@ -14,4 +14,4 @@ if stevilo.isdigit() == False:
 obrat = stevilo[::-1]
 
 # izpišemo vsoto
-print("Obrat števila {} je {}.".format(stevilo,obrat))
+print(f"Obrat števila '{stevilo}' je '{obrat}'.")

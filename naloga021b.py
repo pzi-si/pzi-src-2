@@ -35,7 +35,7 @@ def preveriStevilke(stevilka):
         stevilka = float(stevilka)
         return stevilka
     except:
-        print("{} ni številka.")
+        print(f"{stevilka} ni številka.")
         quit()
 
 print("-"*90)
@@ -50,26 +50,26 @@ napaka = False
 
 # preverimo, če trikovnik s podanimi stranicami obstaja
 if a + b > c:
-    print("a + b > c: Pogoj JE izpolnjen -> {} + {} > {}".format(a,b,c))
+    print(f"a + b > c: Pogoj JE izpolnjen -> {a} + {b} > {c}")
 else:
-    print("a + b > c: Pogoj NI izpolnjen -> {} + {} < {}".format(a,b,c))
+    print(f"a + b > c: Pogoj NI izpolnjen -> {a} + {b} < {c}")
     napaka = True
 
 if b + c > a:
-    print("b + c > a: Pogoj JE izpolnjen -> {} + {} > {}".format(b,c,a))
+    print(f"b + c > a: Pogoj JE izpolnjen -> {b} + {c} > {a}")
 else:
-    print("b + c > a: Pogoj NI izpolnjen -> {} + {} < {}".format(b,c,a))
+    print(f"b + c > a: Pogoj NI izpolnjen -> {b} + {c} < {a}")
     napaka = True
 
 if a + c > b:
-    print("a + c > b: Pogoj JE izpolnjen -> {} + {} > {}".format(a,c,b))
+    print(f"a + c > b: Pogoj JE izpolnjen -> {a} + {c} > {b}")
 else:
-    print("a + c > b: Pogoj NI izpolnjen -> {} + {} < {}".format(a,c,b))
+    print(f"a + c > b: Pogoj NI izpolnjen -> {a} + {c} < {b}")
     napaka = True
 
 print("-"*90)
 if napaka == True:
-    print("Trikotnik s podanimi stranicami {}, {} in {} ne obstaja.".format(a,b,c))
+    print(f"Trikotnik s podanimi stranicami {a}, {b} in {c} ne obstaja.")
 else:
     obseg = a + b + c
     
@@ -80,4 +80,4 @@ else:
     povrsina = (s*(s-a)*(s-b)*(s-c))**0.5
 
     # izpis
-    print("Trikotnik s podanimi stranicami {}, {} in {} ima obseg {} in površino {}.".format(a,b,c,obseg,povrsina))
+    print(f"Trikotnik s podanimi stranicami {a}, {b} in {c} ima obseg {obseg} in površino {povrsina}.")

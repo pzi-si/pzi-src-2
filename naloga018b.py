@@ -17,20 +17,15 @@ print("*********************************")
 # pozovemo uporabnika, naj vpiše besedilo
 besedilo = input("Vpiši potencialen palindrom: ")
 
-# odstranimo presledke
-cisto_besedilo = besedilo.replace(" ","")
+# odstranimo presledke in vse velike črke spremenimo v male
+cisto_besedilo = besedilo.replace(" ","").lower()
+cisto_besedilo = cisto_besedilo.replace(".","").replace(",","").replace("!","")
 
 # obrnemo besedilo
 obrnjeno_besedilo = cisto_besedilo[::-1]
 
-i = 0
-palindrom = True
-while i < len(cisto_besedilo):
-    if cisto_besedilo[i] != obrnjeno_besedilo[i]:
-        palindrom = False
-    i += 1
-
-if palindrom:
-    print("Besedilo '{}' JE palindrom!".format(besedilo))
+# primerjamo besedili
+if cisto_besedilo == obrnjeno_besedilo:
+    print(f"Besedilo '{besedilo}' JE palindrom!")
 else:
-    print("Besedilo '{}' NI palindrom!".format(besedilo))
+    print(f"Besedilo '{besedilo}' NI palindrom!")

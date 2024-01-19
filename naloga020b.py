@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-""" Sestavi program, s katerim ugibamo celo število med 1 in 100. """
-
-## program pomaga najti rešitev
-
 print("*********************************")
 print("***** Igra: ugani številko! *****")
 print("*********************************")
@@ -29,9 +25,12 @@ while stevilka != iskanaStevilka:
                 pomoc = "Iskana številka je manjša!"
             else:
                 pomoc = "Iskana številka je večja!"
-            print("Poskus št. {}. Nisi uganil. {} ni prava številka. {} Poskusi znova!".format(steviloPoskusov, stevilka, pomoc))
+            print(f"Poskus št. {steviloPoskusov}. {stevilka} ni prava številka.")
+            print(f"{pomoc} Poskusi znova!")
         elif stevilka == iskanaStevilka:
-            print("Bravo! V {}. poskusu si uganil številko {}! Igra je končana!".format(steviloPoskusov, stevilka))
+            print(f"Bravo! V {steviloPoskusov}. poskusu si uganil številko {stevilka}!")
+            print(f"Igra je končana!")
+        print("-"*33)
     else:
-        print("Poskus št. {}. Vnesel si '{}', kar ni cela številka. Poskusi znova!".format(steviloPoskusov, stevilka))
-
+        print(f"Poskus št. {steviloPoskusov}. Vnesel si '{stevilka}', kar ni cela številka.")
+        print(f"Poskusi znova!")
