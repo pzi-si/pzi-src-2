@@ -1,13 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-""" 
-Sestavi program, ki bo prebral tri realna števila, nato pa preveril, ali obstaja trikotnik s takimi dolžinami stranic. 
-Če obstaja, naj program izračuna njegovo ploščino in obseg. 
-
-Namig: Heronova formula: https://sl.wikipedia.org/wiki/Heronova_formula
-"""
-
 # Izpišemo, za kakšen program gre
 print("*"*64)
 print("*"*5,"Karakteristike trikotnika","*"*5)
@@ -27,7 +20,7 @@ def preveriStevilke(stevilka):
         print(f"'{stevilka}' ni številka.")
         quit()
 
-print("-"*90)
+print("-"*64)
 
 # poskusimo spremeniti tip spremenljivke iz 'string' v 'float'
 a = preveriStevilke(a)
@@ -56,7 +49,7 @@ else:
     print(f"a + c > b: Pogoj NI izpolnjen -> {a} + {c} < {b}")
     napaka = True
 
-print("-"*90)
+print("-"*64)
 if napaka == True:
     print(f"Trikotnik s podanimi stranicami {a}, {b} in {c} ne obstaja.")
 else:
