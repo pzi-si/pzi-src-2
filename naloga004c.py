@@ -21,4 +21,4 @@ sestevanec2 = float(sestevanec2)
 vsota = sestevanec1 + sestevanec2
 
 # izpišemo vsoto
-print("Rezultat: {} + {} = {}".format(sestevanec1,sestevanec2,vsota))
+print(f"Rezultat: {sestevanec1} + {sestevanec2} = {vsota}")

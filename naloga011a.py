@@ -24,4 +24,4 @@ for i in range(1,stevilo+1):
     # uvesti moramo novo spremeljivko, da si začasno zapomni vrednost spremenljivke stevilo_ena
     stevilo_nic = stevilo_ena
     stevilo_ena = stevilo_dva
-    stevilo_dva = stevilo_nic+stevilo_dva
+    stevilo_dva = stevilo_nic+stevilo_ena
