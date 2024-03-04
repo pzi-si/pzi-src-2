@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-#T(°C) = (T(°F) - 32 °F)/1,8
+#T(°C) = (T(°F) - 32)/1,8
 #T(°F) = 1,8 T(°C) + 32
 
 # Izpišemo, za kakšen program gre

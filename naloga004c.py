@@ -3,7 +3,6 @@
 
 """ Program, ki sešteje podani števili. """
 
-
 # Izpišemo, za kakšen program gre
 print("*"*40)
 print("*"*5,"Program za seštevanje števil","*"*5)
@@ -21,4 +20,4 @@ sestevanec2 = float(sestevanec2)
 vsota = sestevanec1 + sestevanec2
 
 # izpišemo vsoto
-print(f"Rezultat: {sestevanec1} + {sestevanec2} = {vsota}")
+print("Rezultat: {} + {} = {}".format(sestevanec1,sestevanec2,vsota))

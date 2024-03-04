@@ -3,7 +3,6 @@
 
 """ Program, ki sešteje podani števili. """
 
-
 # Izpišemo, za kakšen program gre
 print("*"*40)
 print("*"*5,"Program za seštevanje števil","*"*5)
