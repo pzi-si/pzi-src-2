@@ -8,13 +8,13 @@ print("*"*60)
 print("*"*5,"Program za izračun največjega skupnega delitelja","*"*5)
 print("*"*60)
 
-# definirajmo funkcijo, ki nam bo preverila, če sta vnešeni številki celi
+# definirajmo funkcijo, ki nam bo preverila, če sta vnešeni števili celi
 def preveriStevilke(stevilka):
     try:
         stevilka = int(stevilka)
         return stevilka
     except:
-        print(f"'{stevilka}' ni številka.")
+        print(f"'{stevilka}' ni število.")
         quit()
 
 # Pozovemo uporabnika, naj poda števila
@@ -43,7 +43,7 @@ while i < len(stevila):
         a,b = stevila[i],delitelj
     a_original,b_original = a,b
 
-    print(f"Preglejujem številki {a} in {b}.")
+    print(f"Preglejujem števili {a} in {b}.")
     # Evklidov algoritem
     while b:
         n = math.floor(a/b)

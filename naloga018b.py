@@ -2,12 +2,12 @@
 # -*- coding: utf-8 -*-
 
 """
-Uporabnik vpiše niz znakov, program pa pove, ali je vpisan niz palindrom ali ne.
+Uporabnik vpiše niz znakov, program pa pove, ali je vpisani niz palindrom ali ne.
 Palindrom je niz znakov, ki se enako prebere z leve in z desne.
 """
 
-## tole deluje: pericarezeracirep
-## tole ne deluje: perica reze raci rep
+## tole deluje: pericareŽeracirep
+## tole ne deluje: perica reŽe raci rep
 
 print("*********************************")
 print("*** Ali je besedilo palindrom ***")
