@@ -9,7 +9,7 @@ print("*"*64)
 # Podamo stranice pravokotnika
 stranice = input('Vnesite dolžine stranic trikotnika, ki jih loči z vejico: ')
 
-# Podan niz znakov pretvorimo v seznam
+# Podani niz znakov pretvorimo v seznam
 stranice = stranice.split(",")
 
 # Preverimo, koliko delov ima seznam
@@ -22,13 +22,13 @@ a = stranice[0]
 b = stranice[1]
 c = stranice[2]
 
-# definirajmo funkcijo, ki nam bo preverila vnešene stranice
+# definirajmo funkcijo, ki nam bo preverila vnesene stranice
 def preveriStevilke(stevilka):
     try:
         stevilka = float(stevilka)
         return stevilka
     except:
-        print(f"{stevilka} ni številka.")
+        print(f"{stevilka} ni število.")
         quit()
 
 print("-"*64)

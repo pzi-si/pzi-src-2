@@ -11,13 +11,13 @@ a = input('Vnesite dolžino stranice a: ')
 b = input('Vnesite dolžino stranice b: ')
 c = input('Vnesite dolžino stranice c: ')
 
-# definirajmo funkcijo, ki nam bo preverila vnešene stranice
+# definirajmo funkcijo, ki nam bo preverila vnesene stranice
 def preveriStevilke(stevilka):
     try:
         stevilka = float(stevilka)
         return stevilka
     except:
-        print(f"'{stevilka}' ni številka.")
+        print(f"'{stevilka}' ni število.")
         quit()
 
 print("-"*64)
